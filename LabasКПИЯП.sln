@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laba26", "Laba26\Laba26.csproj", "{958CFC06-4555-49FE-8EBA-502E1A643981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba28", "Laba28\Laba28.csproj", "{5F411DD8-42CF-4FC6-B803-9DF3833EB7F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba29", "Laba29\Laba29.csproj", "{8DC6E81B-2AA2-4640-833D-5A15AE86A679}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{958CFC06-4555-49FE-8EBA-502E1A643981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958CFC06-4555-49FE-8EBA-502E1A643981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958CFC06-4555-49FE-8EBA-502E1A643981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958CFC06-4555-49FE-8EBA-502E1A643981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F411DD8-42CF-4FC6-B803-9DF3833EB7F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F411DD8-42CF-4FC6-B803-9DF3833EB7F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F411DD8-42CF-4FC6-B803-9DF3833EB7F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F411DD8-42CF-4FC6-B803-9DF3833EB7F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC6E81B-2AA2-4640-833D-5A15AE86A679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC6E81B-2AA2-4640-833D-5A15AE86A679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC6E81B-2AA2-4640-833D-5A15AE86A679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC6E81B-2AA2-4640-833D-5A15AE86A679}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66C70D54-88EF-496E-8CA0-D51A1E38180D}
+	EndGlobalSection
+EndGlobal
