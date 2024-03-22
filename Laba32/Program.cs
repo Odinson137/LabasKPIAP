@@ -77,20 +77,27 @@ var teachers = new List<Teacher>()
 };
 
 var mathTeacherNames = teachers
-    .Where(c => c.Subjects.Select(c => c.Title).Contains("Математика"))
+    .Where(c => c.Subjects.Select(s => s.Title).Contains("Математика"))
+    .OrderByDescending(c => c.Name)
     .Select(c => new {Name = c.Name, LastName = c.LastName})
     .ToList();
 
-Console.WriteLine("Преподаватели, которые ведут математику:");
+Console.WriteLine("Преподаватели, которые ведут математику, отсортированных по убыванию" +
+                  ":");
 
 foreach (var mathteacherName in mathTeacherNames)
 {
     Console.WriteLine($"{mathteacherName.Name} - {mathteacherName.LastName}");
 }
 
-var allSubjects = teachers.SelectMany(c => c.Subjects).Select(c => c.Title).Distinct().ToList();
+var allSubjects = teachers
+    .SelectMany(c => c.Subjects)
+    .OrderByDescending(c => c.Title)
+    .Select(c => c.Title)
+    .Distinct()
+    .ToList();
 
-Console.WriteLine("Список всех предметов:");
+Console.WriteLine("Список всех предметов отсортированных по убыванию:");
 
 foreach (var subject in allSubjects)
 {
