@@ -71,38 +71,55 @@ var teacher3 = new Teacher
     }
 };
 
-var teachers = new List<Teacher>()
+
+var teachers = new List<Teacher> { teacher1, teacher2, teacher3 };
+
+var groupedTeachers = teachers.GroupBy(t => t.Qualification);
+
+foreach (var group in groupedTeachers)
 {
-    teacher1, teacher2, teacher3,
-};
+    Console.WriteLine($"Учителя с квалификацией: {group.Key}");
 
-var mathTeacherNames = teachers
-    .Where(c => c.Subjects.Select(s => s.Title).Contains("Математика"))
-    .OrderByDescending(c => c.Name)
-    .Select(c => new {Name = c.Name, LastName = c.LastName})
-    .ToList();
+    foreach (var teacher in group)
+    {
+        Console.WriteLine($"Имя: {teacher.Name} {teacher.LastName}, Опыт: {teacher.YearExperience} лет");
 
-Console.WriteLine("Преподаватели, которые ведут математику, отсортированных по убыванию" +
-                  ":");
+        Console.WriteLine("Преподаваемые предметы:");
+        foreach (var subject in teacher.Subjects)
+        {
+            Console.WriteLine($"- {subject.Title}: {subject.Description}");
+        }
+    }
 
-foreach (var mathteacherName in mathTeacherNames)
-{
-    Console.WriteLine($"{mathteacherName.Name} - {mathteacherName.LastName}");
+    Console.WriteLine();
 }
-
-var allSubjects = teachers
-    .SelectMany(c => c.Subjects)
-    .OrderByDescending(c => c.Title)
-    .Select(c => c.Title)
-    .Distinct()
-    .ToList();
-
-Console.WriteLine("Список всех предметов отсортированных по убыванию:");
-
-foreach (var subject in allSubjects)
-{
-    Console.WriteLine(subject);
-}
+// var mathTeacherNames = teachers
+//     .Where(c => c.Subjects.Select(s => s.Title).Contains("Математика"))
+//     .OrderByDescending(c => c.Name)
+//     .Select(c => new {Name = c.Name, LastName = c.LastName})
+//     .ToList();
+//
+// Console.WriteLine("Преподаватели, которые ведут математику, отсортированных по убыванию" +
+//                   ":");
+//
+// foreach (var mathteacherName in mathTeacherNames)
+// {
+//     Console.WriteLine($"{mathteacherName.Name} - {mathteacherName.LastName}");
+// }
+//
+// var allSubjects = teachers
+//     .SelectMany(c => c.Subjects)
+//     .OrderByDescending(c => c.Title)
+//     .Select(c => c.Title)
+//     .Distinct()
+//     .ToList();
+//
+// Console.WriteLine("Список всех предметов отсортированных по убыванию:");
+//
+// foreach (var subject in allSubjects)
+// {
+//     Console.WriteLine(subject);
+// }
 
 class Teacher
 {
