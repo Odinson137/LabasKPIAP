@@ -5,11 +5,15 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laba26", "Laba26\Laba26.csproj", "{958CFC06-4555-49FE-8EBA-502E1A643981}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba28", "Laba28\Laba28.csproj", "{5F411DD8-42CF-4FC6-B803-9DF3833EB7F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laba28", "Laba28\Laba28.csproj", "{5F411DD8-42CF-4FC6-B803-9DF3833EB7F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba29", "Laba29\Laba29.csproj", "{8DC6E81B-2AA2-4640-833D-5A15AE86A679}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba32", "Laba32\Laba32.csproj", "{A218B4C5-82A4-464E-868D-CEA9A6053740}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laba32", "Laba32\Laba32.csproj", "{A218B4C5-82A4-464E-868D-CEA9A6053740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba35.Task1", "Laba35.Task1\Laba35.Task1.csproj", "{F831DCEE-7C55-406E-8258-5A30FFE62302}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba35.Task2", "Laba35.Task2\Laba35.Task2.csproj", "{2ECC2809-84EC-4E76-BB29-562C7E2C8033}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{A218B4C5-82A4-464E-868D-CEA9A6053740}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A218B4C5-82A4-464E-868D-CEA9A6053740}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A218B4C5-82A4-464E-868D-CEA9A6053740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F831DCEE-7C55-406E-8258-5A30FFE62302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F831DCEE-7C55-406E-8258-5A30FFE62302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F831DCEE-7C55-406E-8258-5A30FFE62302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F831DCEE-7C55-406E-8258-5A30FFE62302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ECC2809-84EC-4E76-BB29-562C7E2C8033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECC2809-84EC-4E76-BB29-562C7E2C8033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECC2809-84EC-4E76-BB29-562C7E2C8033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECC2809-84EC-4E76-BB29-562C7E2C8033}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
